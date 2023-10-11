@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.canvas {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.frame {
+   width: 400px;
+   height: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(to top right, #433AA0, #4EC2C9);
+}
