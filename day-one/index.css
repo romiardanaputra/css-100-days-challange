@@ -1,22 +1,102 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 * {
-   margin: 0;
-   padding: 0;
+   margin: 0px;
+   padding: 0px;
    box-sizing: border-box;
+   font-family: "Courier New", Courier, sans-serif;
 }
 
 .canvas {
+   width: 100%;
    height: 100vh;
    display: flex;
    justify-content: center;
    align-items: center;
+   z-index: -10000;
 }
 
 .frame {
    width: 400px;
    height: 400px;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
-   background: linear-gradient(to top right, #433AA0, #4EC2C9);
+   background: linear-gradient(to top right, #433aa0, #4ec2c9);
+   position: relative;
+   border-radius: 10px;
+}
+
+.number {
+   width: 200px;
+   height: 100px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.pre-first-number,
+.first-number,
+.second-number,
+.third-number {
+   box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pre-first-number,
+.first-number {
+   background-color: #fff;
+   z-index: 3;
+}
+.pre-first-number {
+   width: 20px;
+   height: 40px;
+   transform: rotate(45deg);
+   position: absolute;
+   top: 0;
+   left: -10px;
+   border-radius: 10px;
+}
+
+.first-number {
+   width: 25px;
+   height: 100px;
+   border-radius: 10px;
+}
+.second-number {
+   z-index: 2;
+}
+
+.third-number {
+   z-index: 1;
+}
+
+.second-number,
+.third-number {
+   width: 100px;
+   height: 100px;
+   margin-left: -5px;
+   border-radius: 50%;
+   border: 25px solid #fff;
+}
+
+.text{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.days,
+.css-challenge {
+   font-weight: 700;
+   color: #fff;
+}
+.days {
+   font-size: 82px;
+   margin-top: 6px;
+   line-height: 60px;
+}
+.css-challenge {
+   font-size: 23px;
+   line-height: 20px;;
 }
