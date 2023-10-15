@@ -1,0 +1,142 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.canvas {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   height: 100vh;
+}
+
+.frame {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+   background: #3faf82;
+
+   width: 500px;
+   height: 500px;
+
+   border-radius: 10px;
+}
+
+.bars {
+   height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.bars:hover {
+   cursor: pointer;
+}
+
+.first-bar,
+.second-bar,
+.third-bar {
+   width: 150px;
+   height: 1rem;
+   background: #fff;
+   margin: 1rem 0;
+   border-radius: 10px;
+   box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.animated-bar1 {
+   animation: animated-bar1 1s ease-in-out forwards;
+}
+
+.animated-bar2 {
+   animation: animated-bar2 1s ease-in-out forwards;
+}
+
+.animated-bar3 {
+   animation: animated-bar3 1s ease-in-out forwards;
+}
+
+.animated-bar1-reverse {
+   animation: animated-bar1-reverse 1s ease-in-out forwards;
+}
+
+.animated-bar2-reverse {
+   animation: animated-bar2-reverse 1s ease-in-out forwards;
+}
+
+.animated-bar3-reverse {
+   animation: animated-bar3-reverse 1s ease-in-out forwards;
+}
+
+@keyframes animated-bar1 {
+   50% {
+      transform: translateY(48px);
+   }
+   100% {
+      transform: translateY(48px) rotateZ(45deg);
+   }
+}
+
+@keyframes animated-bar2 {
+   50% {
+      width: 150px;
+      opacity: 0;
+   }
+   100% {
+      width: 100px;
+      opacity: 0;
+   }
+}
+
+@keyframes animated-bar3 {
+   50% {
+      transform: translateY(-48px);
+   }
+   100% {
+      transform: translateY(-48px) rotateZ(135deg);
+   }
+}
+
+@keyframes animated-bar1-reverse {
+   0% {
+      transform: translateY(48px) rotateZ(45deg);
+   }
+   50% {
+      transform: translateY(48px) rotateZ(0deg);
+   }
+   100% {
+      transform: translateY(0) rotateZ(0);
+   }
+}
+
+@keyframes animated-bar2-reverse {
+   0% {
+      width: 120px;
+      opacity: 0;
+   }
+   50% {
+      width: 120px;
+      opacity: 0;
+   }
+   100% {
+      width: 150px;
+      opacity: 1;
+   }
+}
+
+@keyframes animated-bar3-reverse {
+   0% {
+      transform: translateY(-48px) rotateZ(135deg);
+   }
+   50% {
+      transform: translateY(-48px) rotateZ(0deg);
+   }
+   100% {
+      transform: translateY(0) rotateZ(0);
+   }
+}
