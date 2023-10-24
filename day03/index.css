@@ -1,0 +1,75 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.frame {
+    width: 400px;
+    height: 400px;
+    background: #22252C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.centered-circle{
+    border-radius: 100%;
+    background: #fff;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+
+.sky{
+    height: 130px;
+    background: #7DDFFC;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.ground {
+    height: 70px;
+    background: #F0DE75;
+}
+
+.triangle-one {
+    height: 73px;
+    width: 150px;
+    background: #fff;
+    position: relative;
+}
+
+.triangle-one::before{
+    content: "";
+    height: 73px;
+    width: 78px;
+    background: #7DDFFC;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    transform: skewX(-45deg);
+}
+.triangle-one::after{
+    content: "";
+    height: 73px;
+    width: 78px;
+    background: #7DDFFC;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    transform: skewX(45deg);
+}
+.sun{
+
+
+}
