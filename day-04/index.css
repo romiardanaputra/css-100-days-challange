@@ -1,0 +1,101 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* in this case when usign box shadow the parent can not using clip path property */
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.frame {
+   width: 400px;
+   height: 400px;
+   background: #f4bf96;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.circle-small {
+   border-radius: 50%;
+   background: #fff6f6;
+   width: 50px;
+   height: 50px;
+   z-index: 3;
+   animation: animated-circle-sm 3s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite
+      alternate;
+}
+
+.circle-medium {
+   border-radius: 50%;
+   background: #fff6f6;
+   width: 100px;
+   height: 100px;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   animation: animated-circle-md 3s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite
+      alternate;
+}
+
+.circle-large {
+   border-radius: 50%;
+   background: #fff6f6;
+   width: 150px;
+   height: 150px;
+   z-index: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   animation: animated-circle-lg 3s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite
+      alternate;
+}
+
+@keyframes animated-circle-sm {
+   0%,
+   70% {
+      transform: scale(0);
+      box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+   }
+
+   100% {
+      transform: scale(1);
+      box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.3);
+   }
+}
+
+@keyframes animated-circle-md {
+   0%,
+   40% {
+      transform: scale(0);
+      box-shadow: 14px 14px 14px 14px rgba(0, 0, 0, 0.1);
+   }
+
+   100% {
+      transform: scale(1);
+      box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.3);
+
+   }
+}
+
+@keyframes animated-circle-lg {
+   0%,
+   10% {
+      transform: scale(0);
+      box-shadow: 14px 14px 14px 14px rgba(0, 0, 0, 0.1);
+   }
+
+   100% {
+      transform: scale(1);
+      box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.3);
+
+   }
+}
