@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Quicksand", sans-serif;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.frame {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 400px;
+   height: 400px;
+   background: #42a7a1;
+
+   border-radius: 10px;
+}
+
+.statistic-card {
+   width: 280px;
+   height: 220px;
+   background: #ffffff;
+   position: relative;
+}
+
+.statistic-header {
+   height: 60px;
+   background: #f1ba64;
+   color: #ffffff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.statistic-header .left-header {
+   padding-left: 10px;
+}
+
+.statistic-header .right-header {
+   padding-right: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+}
+.statistic-header .title,
+.statistic-header .revenue-value {
+   font-size: 14px;
+   display: block;
+   font-weight: 700;
+}
+
+.statistic-header .date,
+.statistic-header .revenue {
+   font-size: 11px;
+   display: block;
+}
+
+.statistic-parameter {
+   padding: 10px 0 14px 0;
+   font-size: 9px;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   gap: 10px;
+   padding-right: 10px;
+}
+.views-bar::before {
+   content: "";
+   background: #fa7373;
+   display: block;
+   width: 11px;
+   height: 3px;
+}
+.purchases-bar::before {
+   content: "";
+   background: #7ba2ff;
+   display: block;
+   width: 11px;
+   height: 3px;
+}
+
+.statistic-graph {
+   width: 100%;
+   height: 100px;
+}
+/* red */
+.red-dot-1,
+.red-dot-2,
+.red-dot-3,
+.red-dot-4,
+.red-dot-5,
+.red-dot-6 {
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   background-color: #fa7373;
+}
+
+.red-dot-1 {
+   transform: translate(30px, 60px);
+}
+.red-dot-2 {
+   transform: translate(70px, 10px);
+}
+.red-dot-3 {
+   transform: translate(115px, 60px);
+}
+.red-dot-4 {
+   transform: translate(160px, 20px);
+}
+.red-dot-5 {
+   transform: translate(210px, 20px);
+}
+.red-dot-6 {
+   transform: translate(245px, 20px);
+}
+
+.red-line-1,
+.red-line-2,
+.red-line-3,
+.red-line-4,
+.red-line-5 {
+   height: 1px;
+   background-color: #fa7373;
+}
+
+.red-line-1 {
+   transform: translate(30px, 28px) rotate(-48deg);
+   transform-origin: 2px 2px;
+   width: 65px;
+}
+.red-line-2 {
+   transform: translate(70px, -20px) rotate(52deg);
+   transform-origin: 2px 2px;
+   width: 75px;
+}
+.red-line-3 {
+   transform: translate(120px, 35px) rotate(-38deg);
+   transform-origin: 2px 2px;
+   width: 57px;
+}
+.red-line-4 {
+   transform: translate(160px, 2px) rotate(7deg) ;
+   transform-origin: 2px 2px;
+   width: 55px;
+}
+.red-line-5 {
+   transform: translate(215px, 8px) rotate(10deg);
+   transform-origin: 2px 2px;
+   width: 45px;
+}
+
+/* blue */
+
+.blue-dot-1,
+.blue-dot-2,
+.blue-dot-3,
+.blue-dot-4,
+.blue-dot-5,
+.blue-dot-6 {
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   background-color: #7ba2ff;
+}
+
+.blue-dot-1 {
+   transform: translate(14px, -10px);
+}
+.blue-dot-2 {
+   transform: translate(50px, -50px);
+}
+.blue-dot-3 {
+   transform: translate(90px, -60px);
+}
+.blue-dot-4 {
+   transform: translate(140px, -49px);
+}
+.blue-dot-5 {
+   transform: translate(200px, -40px);
+}
+.blue-dot-6 {
+   transform: translate(240px, -50px);
+}
+
+.blue-line-1,
+.blue-line-2,
+.blue-line-3,
+.blue-line-4,
+.blue-line-5 {
+   height: 1px;
+   background-color: #7ba2ff;
+}
+
+.blue-line-1 {
+   transform: translate(20px, -48px) rotate(-44deg);
+   transform-origin: 2px 2px;
+   width: 49px;
+}
+.blue-line-2 {
+   transform: translate(55px, -81px) rotate(-5deg);
+   transform-origin: 20px 20px;
+   width: 42px;
+}
+.blue-line-3 {
+   transform: translate(90px, -84px) rotate(19deg);
+   transform-origin: 2px 2px;
+   width: 58px;
+}
+.blue-line-4 {
+   transform: translate(143px, -67px) rotate(14deg) ;
+   transform-origin: 2px 2px;
+   width: 64px;
+}
+.blue-line-5 {
+   transform: translate(200px, -54px) rotate(-6deg);
+   transform-origin: 2px 2px;
+   width: 65px;
+}
+
+.days {
+   font-size: 9px;
+   padding-inline: 10px;
+   font-weight: 700;
+   color: #949494;
+   display: flex;
+   justify-content: space-around;
+}
+
+
+
+
