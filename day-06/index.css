@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Quicksand", sans-serif;
+}
+
+body {
+   min-height: 100vh;
+   min-width: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.center {
+   background: linear-gradient(to top right, #eebe6c 0%, #ca7c4e 100%);
+   width: 400px;
+   height: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.card {
+   background: #fff;
+   height: 299px;
+   width: 320px;
+   display: flex;
+   align-items: center;
+}
+.profile-left {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   width: 200px;
+}
+img {
+   display: block;
+   width: 82px;
+   height: 82px;
+   border-radius: 50%;
+}
+.name {
+   font-weight: 700;
+   color: #786450;
+   font-size: 15px;
+}
+.profession {
+   font-size: 11px;
+   margin-top: -5px;
+   margin-bottom: 20px;
+}
+.btn-follow,
+.btn-message {
+   font-size: 12px;
+   font-weight: 700;
+   color: #786450;
+   padding-inline: 6px;
+   padding-block: 1px;
+   width: 120px;
+   height: 30px;
+   border-radius: 20px;
+   background: none;
+   border: 1px solid #786450;
+}
+
+.profile-right {
+}
+.posts,
+.likes,
+.follower {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: #f5e8df;
+   width: 120px;
+   height: 99px;
+   color: #786450;
+   border-bottom: 1px solid #fff;
+}
+
+.posts-value,
+.likes-value,
+.follower-value {
+   font-weight: 700;
+   font-size: 18px;
+
+}
+
+.posts-text,
+.likes-text,
+.follower-text {
+   font-size: 11px;
+}
