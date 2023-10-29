@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Quicksand", sans-serif;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.frame {
+   background-color: #2e4374;
+   width: 400px;
+   height: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+}
+
+.center {
+   width: 300px;
+   height: 300px;
+   background-color: #ffffff;
+}
+
+.title {
+   height: 60px;
+   background-color: #ffcc70;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-weight: 700;
+}
+
+i {
+   font-size: 25px;
+   cursor: pointer;
+}
+
+.notif {
+   font-size: 15px;
+}
+
+.timeline {
+   margin-inline: 10px;
+   position: relative;
+}
+
+.horizontal-line {
+   width: 3px;
+   height: 240px;
+   background-color: #d3d3d3;
+   margin-left: 10px;
+   position: absolute;
+}
+
+.notification {
+   margin-inline: 40px;
+   padding: 14px 0;
+}
+.notification .circle {
+   border-radius: 50%;
+   border: 3px solid #d3d3d3;
+   width: 13px;
+   height: 13px;
+   position: absolute;
+   left: 5px;
+   background: #fff;
+}
+.notification .time {
+   font-size: 11px;
+}
+
+.notification .message {
+   font-size: 15px;
+}
+
+/* animated */
+.notification:hover {
+   color: #ffcc70;
+   transition: all 0.1s ease-in-out;
+}
+
+input {
+    padding: 10px 16px;
+    border-radius: 30px;
+    border-style: none;
+    display: none;
+}
+
+input:focus{
+    outline: transparent;
+}
