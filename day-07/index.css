@@ -36,6 +36,7 @@ body {
    justify-content: space-around;
    align-items: center;
    font-weight: 700;
+   position: relative;
 }
 
 i {
@@ -88,12 +89,44 @@ i {
 }
 
 input {
-    padding: 10px 16px;
-    border-radius: 30px;
-    border-style: none;
-    display: none;
+   padding: 10px 16px;
+   border-radius: 30px;
+   border-style: none;
+   display: none;
+   position: absolute;
 }
 
-input:focus{
-    outline: transparent;
+.input-fade-in {
+   display: block;
+   animation: fade-in 0.3s ease-in-out alternate;
+}
+
+.input-fade-out {
+   animation: fade-out .3s ease-in-out alternate;
+   display: block;
+}
+
+input:focus {
+   outline: transparent;
+}
+.hide-icon {
+   animation: fade-out 0.3s ease-in-out alternate;
+}
+
+@keyframes fade-in {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+@keyframes fade-out {
+   0% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+   }
 }

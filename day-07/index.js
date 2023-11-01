@@ -1,8 +1,14 @@
 var searchBar = document.querySelector(".search-bar");
-console.log(searchBar);
+var inputForm = document.querySelector("#input-search");
 const isClick = () => {
    searchBar.addEventListener("click", () => {
-      alert(1);
+      if (inputForm.classList.contains("input-fade-in")) {
+         inputForm.classList.add("input-fade-out");
+         inputForm.classList.remove("input-fade-in");
+      } else {
+         inputForm.classList.add("input-fade-in");
+         inputForm.classList.remove("input-fade-out");
+      }
    });
 };
 
