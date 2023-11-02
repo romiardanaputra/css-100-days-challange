@@ -21,8 +21,48 @@ body {
    justify-content: center;
    align-items: center;
    border-radius: 10px;
+   position: relative;
+}
+.sidebar-outside {
+   width: 180px;
+   height: 260px;
+   background-color: #1d2f5a;
+   margin-left: 40px;
+   border-radius: 2px;
+   position: absolute;
+   top: 65px;
+	left: 10px;
+}
+.sidebar-outside ul {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   height: inherit;
 }
 
+.sidebar-outside li{
+   list-style: none;
+   text-align: center;
+   padding: 16px 18px;
+   width: 180px;
+
+
+}
+
+.sidebar-outside a {
+   text-decoration: none;
+   color: #fff;   
+   font-size: 14px;
+ 
+
+}
+
+.sidebar-outside li:hover {
+   color: #1d2f5a;
+background-color: #fff;
+
+}
 .center {
    width: 300px;
    height: 300px;
@@ -102,8 +142,8 @@ input {
 }
 
 .input-fade-out {
-   animation: fade-out .3s ease-in-out alternate;
-   display: block;
+   animation: fade-out 0.3s ease-in-out alternate;
+   display: none;
 }
 
 input:focus {
