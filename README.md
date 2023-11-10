@@ -1,2 +1,2 @@
-# css-100-days-challange
+# 100 Days Of Css Challange
  practicing my css skill with 100 days css challange
