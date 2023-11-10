@@ -23,7 +23,16 @@ body {
    width: 400px;
    height: 400px;
    border-radius: 10px;
-   box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+   filter: contrast(35);
+}
+
+.center {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   filter: blur(10px);
 }
 
 .blob {
@@ -32,7 +41,7 @@ body {
    left: 50%;
    transform: translate(-50%, -50%);
    border-radius: 50%;
-   filter: blur(4px);
+   filter: blur(1px);
    background-color: #000;
 }
 
@@ -62,17 +71,44 @@ body {
 }
 
 .b5 {
-   height: 30px;
-   width: 30px;
+   height: 26px;
+   width: 36px;
    transform-origin: -50px 60px;
    animation: rotate 3.8s linear infinite;
 }
 .b6 {
+   height: 30px;
+   width: 30px;
+   transform-origin: -50px -60px;
+   animation: rotate 4.3s linear infinite;
+}
+
+.b7 {
+   height: 27px;
+   width: 27px;
+   transform-origin: -50px 70px;
+   animation: rotate 5s linear infinite;
+}
+
+.b8 {
    height: 20px;
    width: 20px;
-   transform-origin: -50px -60px;
-   animation: rotate 4s linear infinite;
-   
+   transform-origin: 35px -60px;
+   animation: rotate 5s linear infinite;
+}
+
+.b9 {
+   height: 20px;
+   width: 20px;
+   transform-origin: 50px 69px;
+   animation: rotate 4.5s linear infinite;
+}
+
+.b10 {
+   height: 35px;
+   width: 35px;
+   transform-origin: -40px 48px;
+   animation: rotate 7s linear infinite;
 }
 
 @keyframes rotate {
