@@ -1,15 +1,18 @@
-var searchBar = document.querySelector(".search-bar");
-var inputForm = document.querySelector("#input-search");
+var searchIcon = document.querySelector(".search-icon");
+var inputField = document.querySelector("#input-search");
+var hamIcon = document.querySelector(".ham-icon");
+var card = document.querySelector(".card")
 const isClick = () => {
-   searchBar.addEventListener("click", () => {
-      if (inputForm.classList.contains("input-fade-in")) {
-         inputForm.classList.add("input-fade-out");
-         inputForm.classList.remove("input-fade-in");
-      } else {
-         inputForm.classList.add("input-fade-in");
-         inputForm.classList.remove("input-fade-out");
-      }
+   searchIcon.addEventListener("click", () => {
+      inputField.classList.toggle("input-field-active");
    });
 };
 
+const navBar = () => {
+   hamIcon.addEventListener("click", () =>{
+      card.classList.toggle("menu-active");
+   })
+}
+
 isClick();
+navBar();
