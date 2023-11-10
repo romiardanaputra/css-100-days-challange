@@ -23,7 +23,7 @@ body {
    width: 400px;
    height: 400px;
    border-radius: 10px;
-   box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
 }
 
 .blob {
@@ -32,7 +32,7 @@ body {
    left: 50%;
    transform: translate(-50%, -50%);
    border-radius: 50%;
-   filter: blur(4px);
+   filter: blur(1px);
    background-color: #000;
 }
 
@@ -71,6 +71,34 @@ body {
    height: 20px;
    width: 20px;
    transform-origin: -50px -60px;
+   animation: rotate 4s linear infinite;
+}
+
+.b7 {
+   height: 25px;
+   width: 25px;
+   transform-origin: -70px -10px;
+   animation: rotate 3s linear infinite;
+}
+
+.b8 {
+   height: 30px;
+   width: 30px;
+   transform-origin: 80px -10px;
+   animation: rotate 3s linear infinite;
+}
+
+.b9 {
+   height: 25px;
+   width: 25px;
+   transform-origin: 90px -50px;
+   animation: rotate 4s linear infinite;
+}
+
+.b10 {
+   height: 25px;
+   width: 25px;
+   transform-origin: 90px 70px;
    animation: rotate 4s linear infinite;
 }
 
