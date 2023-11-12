@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Quicksand", sans-serif;
+}
+
+.frame {
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.center {
+   width: 400px;
+   height: 400px;
+   background-color: #1a2238;
+   position: relative;
+   overflow: hidden;
+   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+
+}
+.hill-bg {
+   background-color: #26314f;
+   border-radius: 50%;
+   position: absolute;
+   z-index: 0;
+   width: 250px;
+   height: 150px;
+}
+
+.hill-fg {
+   background-color: #303c5d;
+   border-radius: 50%;
+   position: absolute;
+   z-index: 1;
+   width: 250px;
+   height: 150px;
+}
+
+.hill-1 {
+   top: 200px;
+   left: -15px;
+}
+
+.hill-2 {
+   top: 200px;
+   left: 210px;
+}
+
+.hill-3 {
+   top: 250px;
+   left: -100px;
+}
+
+.hill-4 {
+   top: 230px;
+   left: 100px;
+}
+
+.hill-5 {
+   top: 260px;
+   left: 290px;
+}
+
+.moon {
+   width: 80px;
+   height: 80px;
+   background-color: #f6edbd;
+   border-radius: 50%;
+   position: absolute;
+   top: 50px;
+   left: 50px;
+   box-shadow: 0 0 50px #f6edbd;
+   animation: moon-up 1s ease-in forwards;
+}
+
+.crater {
+   border-radius: 50%;
+   background-color: #ece1a8;
+   position: absolute;
+}
+
+.crater-1 {
+   width: 10px;
+   height: 10px;
+   top: 25px;
+   left: 20px;
+}
+
+.crater-2 {
+   width: 10px;
+   height: 10px;
+   top: 10px;
+   left: 30px;
+}
+
+.crater-3 {
+   width: 25px;
+   height: 25px;
+   top: 40px;
+   left: 10px;
+}
+
+.crater-4 {
+   width: 10px;
+   height: 10px;
+   top: 30px;
+   left: 50px;
+}
+
+.crater-5 {
+   width: 15px;
+   height: 15px;
+   top: 40px;
+   left: 40px;
+}
+
+.content {
+   width: 400px;
+   height: 100px;
+   background-color: #fff;
+   position: absolute;
+   bottom: 0;
+   z-index: 1;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   gap: 35px;
+}
+
+.temprature {
+   font-size: 45px;
+}
+
+.text{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
