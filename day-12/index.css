@@ -7,55 +7,83 @@
 }
 
 .frame {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
- 
- .center {
-    width: 400px;
-    height: 400px;
-    background-color: #a0a0a0;
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
- }
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
- .quote-sign{
-    display: block;
-    font-size: 100px;
-    color: #fff;
-    position: absolute; 
-    top: 10%;
-    left: 5%;
-    opacity: .5;
-    transform: rotate(180deg);
- }
+.center {
+   width: 400px;
+   height: 400px;
+   background-color: #a0a0a0;
+   border-radius: 10px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   flex-direction: column;
+   overflow: hidden;
+}
 
- p{
-    padding: 40px;
-    font-size: 24px;
-    color: #fff;
-    line-height: 35px;
-    font-weight: 700;
- }
+.quote-sign {
+   display: block;
+   font-size: 100px;
+   color: #fff;
+   position: absolute;
+   top: 10%;
+   left: 5%;
+   opacity: 0.5;
+   transform: rotate(180deg);
+}
 
- .author{
-    padding-inline: 40px;
-    font-size: 20px;
-    color: #fff;
-    margin-top: -20px;
- }
+p {
+   padding: 40px;
+   font-size: 24px;
+   color: #fff;
+   line-height: 35px;
+   font-weight: 700;
+}
 
- .tooltips{
-    background-color: #000;
-    color: #fff;
-    padding-inline: 10px;
-    border-radius: 10px;
-    cursor: pointer;
- }
+.author {
+   padding-inline: 40px;
+   font-size: 20px;
+   color: #fff;
+   margin-top: -20px;
+}
 
+.tooltip {
+   background-color: #000;
+   color: #fff;
+   padding-inline: 10px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.toast {
+   width: 330px;
+   height: 120px;
+   position: absolute;
+   top: -30%;
+   left: 10%;
+   background-color: #fff;
+   border-radius: 10px;
+   overflow: hidden;
+   z-index: 1;
+   transition: all 0.5s ease-in-out;
+}
+
+.sound {
+   background-color: #000;
+   color: #fff;
+   padding: 10px;
+}
+
+.text {
+   padding: 10px;
+}
+
+.toast-active {
+   position: absolute;
+   transition: all 0.5s ease-in-out;
+   transform: translate(0, 150px);
+}
