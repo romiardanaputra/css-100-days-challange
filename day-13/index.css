@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Quicksand", sans-serif;
+}
+
+.frame {
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.center {
+   width: 400px;
+   height: 400px;
+   background-color: #fff;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   box-shadow: 4px 8px 26px 0 rgba(0, 0, 0, 0.5);
+}
+
+.galleries {
+   display: grid;
+   grid-template-columns: auto auto;
+}
+
+.grid-item {
+   width: 200px;
+   height: 200px;
+   background-color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.layer {
+   width: 192px;
+   height: 192px;
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.4);
+   opacity: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.layer:hover {
+   opacity: 1;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+}
+
+.layer:not(:hover) {
+   opacity: 0;
+   transition: all 0.3s ease-in-out;
+}
+
+.btn-plus {
+   padding: 20px;
+   background-color: lightcoral;
+   border-style: none;
+   border-radius: 50%;
+   cursor: pointer;
+   box-shadow: 4px 8px 26px 0 rgba(0, 0, 0, 0.5);
+   position: absolute;
+   transform: scale(0);
+   transition: all .5s ease-in-out;
+
+}
+
+.btn-plus-active{
+    position: absolute;
+    transform: scale(1);
+    transition: all .5s ease-in-out;
+}
+
+.plus {
+   color: #fff;
+   font-size: 20px;
+}
+
+@keyframes btn-hovered {
+   0% {
+      transform: scale(0);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
