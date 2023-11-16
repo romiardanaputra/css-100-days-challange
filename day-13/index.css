@@ -88,7 +88,14 @@
    position: absolute;
    width: 400px;
    height: 400px;
-   background: lightcoral;
+   /* masalahnya disini */
+   z-index: -1;
+   transition: all 0.5s ease-in-out;
+}
+
+.card-profile-active {
+   z-index: 0;
+   transition: all 0.5s ease-in-out;
 }
 
 .card-background-image {
@@ -96,6 +103,15 @@
    height: 160px;
    background: url("https://100dayscss.com/codepen/13-1-header.jpg") center
       center no-repeat;
+
+   position: absolute;
+   transform: translate(0, -180px);
+   transition: all 2s ease-in-out;
+}
+.card-background-image-active {
+   transform: translate(0, 0px);
+   transition: all 1s ease-in-out;
+   z-index: 1;
 }
 
 .profile {
@@ -104,20 +120,34 @@
    border-radius: 50%;
    box-shadow: 4px 8px 26px 0 rgba(0, 0, 0, 0.5);
    position: absolute;
-   top: 30%;
+   transform: translate(0, -130px);
    left: calc(300px / 2);
    outline: 2px solid #fff;
    cursor: pointer;
+   transition: all 1s ease-in-out;
+   transition-delay: 0.3s;
 }
 
+.profile-active {
+   transform: translate(0, 130px);
+   transition: all 1s ease-in-out;
+   transition-delay: 0.3s;
+   z-index: 1;
+}
 .profile-layer {
    width: 100px;
    height: 100px;
    border-radius: 50%;
    position: absolute;
-   top: 30%;
+   transform: translate(0, -130px);
    left: calc(300px / 2);
    background-color: rgba(0, 0, 0, 0.4);
+   transition: all 1s ease-in-out;
+}
+.profile-layer-active {
+   transform: translate(0, 130px);
+   transition: all 1s ease-in-out;
+   z-index: 1;
 }
 
 .profile-layer:hover {
@@ -137,7 +167,29 @@
    align-items: center;
    width: 100%;
    height: calc(400px - 130px);
-   gap: 40px;
+   position: absolute;
+   transform: translate(0,450px );
+   background-color: lightcoral;
+   transition: all 1s ease-in-out;
+}
+.icons {
+   display: flex;
+   gap: 20px;
+   position: absolute;
+   bottom: 20%;
+}
+
+.social-media-active {
+   transform: translate(0,130px );
+   transition: all 1s ease-in-out;
+}
+
+.name {
+   color: #fff;
+   font-size: 14px;
+   position: absolute;
+   z-index: 1;
+   margin-top: -30px;
 }
 
 .social-media i {
@@ -158,10 +210,19 @@
 .close-btn {
    position: absolute;
    background-color: lightcoral;
-   top: 10px;
+   transform: translate(0, -130px);
    right: 10px;
    border: none;
    border-radius: 50%;
+   transition: all 1s ease-in-out;
+   z-index: 1;
+   transition-delay: 0.2s;
+}
+
+.close-btn-active {
+   transform: translate(0, 0px);
+   transition: all 1s ease-in-out;
+   transition-delay: 0.2s;
 }
 .close-btn i {
    font-size: 20px;
