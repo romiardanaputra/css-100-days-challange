@@ -106,11 +106,13 @@
 
    position: absolute;
    transform: translate(0, -180px);
-   transition: all 2s ease-in-out;
+   transition: all .8s ease-in-out;
+   transition-delay: .6s;
+
 }
 .card-background-image-active {
    transform: translate(0, 0px);
-   transition: all 1s ease-in-out;
+   transition: all .8s ease-in-out;
    z-index: 1;
 }
 
@@ -171,6 +173,7 @@
    transform: translate(0,450px );
    background-color: lightcoral;
    transition: all 1s ease-in-out;
+   z-index: -1;
 }
 .icons {
    display: flex;

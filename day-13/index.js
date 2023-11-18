@@ -55,7 +55,7 @@ const btnCloseClick = () => {
             if (!cardProfile.classList.contains("card-profile-active")) {
                 cardProfile.style.zIndex = "-1";
             }
-        }, 1000);
+        }, 2000);
 
    });
 };
