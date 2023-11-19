@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Quicksand", sans-serif;
+}
+
+.frame {
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.center {
+   width: 400px;
+   height: 400px;
+   background-color: #fff;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   box-shadow: 4px 8px 26px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card {
+   width: 300px;
+   height: 200px;
+   background-color: yellow;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   overflow: hidden;
+   position: relative;
+}
+
+.bicycle {
+   animation: bicycle 0.8s ease-in-out infinite;
+}
+
+.street {
+   position: absolute;
+   bottom: 25%;
+}
+
+.stripe-1 {
+   width: 20px;
+   height: 5px;
+   background-color: #0a0a0a;
+   border-radius: 10px;
+   /* animation: street .8s linear infinite; */
+}
+
+@keyframes bicycle {
+   0%,
+   100% {
+      transform: scaleY(1);
+   }
+
+   50% {
+      transform: scaleY(1.05);
+   }
+}
+
+@keyframes street {
+	0% {
+		transform: translate3d(0, 0, 0) scaleX(1);
+	}
+	100% {
+		transform: translate3d(-210px,0,0) scaleX(.8);
+	}
+}
