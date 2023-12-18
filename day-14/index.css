@@ -23,11 +23,13 @@
    align-items: center;
    overflow: hidden;
    box-shadow: 4px 8px 26px 0 rgba(0, 0, 0, 0.5);
+   -webkit-font-smoothing: antialiased;
 }
 
 .card {
-   width: 300px;
-   height: 200px;
+   position: absolute;
+   width: 320px;
+   height: 180px;
    background-color: yellow;
    display: flex;
    align-items: center;
@@ -37,13 +39,25 @@
    position: relative;
 }
 
+.front{
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+
 .bicycle {
    animation: bicycle 0.8s ease-in-out infinite;
 }
 
 .street {
    position: absolute;
-   bottom: 25%;
+   width: 160px;
+   height: 3px;
+   overflow: hidden;
+   bottom: 0;
+   left: 80px;
+   display: flex;
+   gap: 5px;
 }
 
 .stripe-1 {
@@ -51,9 +65,31 @@
    height: 5px;
    background-color: #0a0a0a;
    border-radius: 10px;
-   /* animation: street .8s linear infinite; */
+   animation: street 0.8s linear infinite;
+}
+.stripe-2 {
+   width: 30px;
+   height: 5px;
+   background-color: #0a0a0a;
+   border-radius: 10px;
+   animation: street 0.8s linear infinite;
 }
 
+.stripe-3 {
+   width: 30px;
+   height: 5px;
+   background-color: #0a0a0a;
+   border-radius: 10px;
+   animation: street 0.8s linear infinite;
+}
+
+.stripe-4 {
+   width: 5px;
+   height: 5px;
+   background-color: #0a0a0a;
+   border-radius: 10px;
+   animation: street 0.8s linear infinite;
+}
 @keyframes bicycle {
    0%,
    100% {
@@ -66,10 +102,10 @@
 }
 
 @keyframes street {
-	0% {
-		transform: translate3d(0, 0, 0) scaleX(1);
-	}
-	100% {
-		transform: translate3d(-210px,0,0) scaleX(.8);
-	}
+   0% {
+      transform: translate3d(0, 0, 0) scaleX(1);
+   }
+   100% {
+      transform: translate3d(-210px, 0, 0) scaleX(0.8);
+   }
 }
