@@ -1,0 +1,95 @@
+:root {
+   --green-color: #5ca05a;
+   --blue-color: #3a92af;
+   --white-color: #fff;
+   --white-grey-color: #BDBDBD;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+   font-family: "Quicksand", sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.frame {
+   width: 400px;
+   height: 400px;
+   background: linear-gradient(
+      to top right,
+      var(--green-color) 0%,
+      var(--blue-color) 100%
+   );
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+}
+
+.center {
+   width: 300px;
+   height: 280px;
+   background-color: var(--white-color);
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.title{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid var(--white-grey-color);
+    color: var(--white-grey-color);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.upload-image-content{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+label[for="upload-img"]{
+   border:1px solid var(--white-grey-color);
+   padding: 25px;
+   border-style: dashed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+}
+#form-upload{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.btn-upload{
+   border-style: none;
+   padding: 10px 40px;
+   color: var(--white-color);
+   background-color: var(--green-color);
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all ease-in-out .2s;
+   border: 1px solid var(--green-color);
+   font-weight: 700;
+}
+
+.btn-upload:hover{
+   color: var(--green-color);
+   background-color: var(--white-color);
+   border: 1px solid var(--green-color);
+}
+
