@@ -1,0 +1,124 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --white-color: #fff;
+   --primary-color: #46a6da;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+   align-items: center;
+   display: flex;
+   font-family: "Quicksand", sans-serif;
+   justify-content: center;
+   min-height: 100vh;
+}
+.frame {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 400px;
+   height: 400px;
+   position: relative;
+}
+.circle {
+   aspect-ratio: 1;
+   background-color: var(--primary-color);
+   border-radius: 50%;
+   width: 90px;
+   position: absolute;
+   z-index: 2;
+}
+.center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   background-color: navajowhite;
+   position: relative;
+}
+
+.circle-blink {
+   z-index: 1;
+   border-radius: 50%;
+   position: absolute;
+   border: 1px solid var(--primary-color);
+   width: 110px;
+   height: 110px;
+   animation: circle-blink 5s ease-in-out infinite;
+}
+
+.octagon {
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   animation: octagon-slide 5s ease-in-out infinite;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) rotate(22.5deg);
+}
+
+.octagon-blink {
+   width: 200px;
+   height: 200px;
+   animation: octagon-blink 5s ease-in-out infinite;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.octagon-blink .blink {
+   position: absolute;
+   top: 0;
+   left: 98px;
+   width: 4px;
+   height: 200px;
+}
+
+.octagon-blink .blink::before,
+.octagon-blink .blink::after {
+   display: block;
+   content: "";
+   position: absolute;
+   width: 4px;
+   height: 25px;
+   top: 0;
+   left: 0;
+   border-radius: 2px;
+   background-color: #fff;
+}
+
+.octagon-blink .blink::after {
+   top: auto;
+   bottom: 0;
+}
+
+.octagon-blink .b1 {
+   transform: rotate(45deg);
+}
+
+.octagon-blink .b2 {
+   transform: rotate(90deg);
+}
+
+.octagon-blink .b3 {
+   transform: rotate(135deg);
+}
+
+.triangle {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100px;
+   height: 100px;
+}
+
+
